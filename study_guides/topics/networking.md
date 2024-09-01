@@ -146,27 +146,35 @@ What are the differences between FTP and SFTP, and what are their default ports?
 - How can large amounts of upload traffic be a sign of a potential attack?
 
 
-
-
-
-
 ## HTTP Headers
-What are the key components of an HTTP request header?
+- What are the key components of an HTTP request header?
 How do the Accept, Accept-Language, Accept-Charset, and Accept-Encoding headers influence the server's response?
-What is the purpose of the Connection header, and what are the differences between close and keep-alive?
-What information does the Referer header provide, and why is it important?
-How does the Expect header affect the HTTP request?
-What are the key components of an HTTP response header?
-What are HTTP status codes and how are they categorized (1xx, 2xx, 3xx, 4xx, 5xx)?
-How is the Content-Type header used in an HTTP response?
-What types of encoding might be specified in the HTTP response header?
-What is the significance of the Content-Language and Content-Charset headers in an HTTP response?
-UDP Headers
-What fields are included in a UDP header, and what is the purpose of each field (Source port, Destination port, Length, Checksum)?
+
+- What is the purpose of the Connection header, and what are the differences between close and keep-alive?
+
+- What information does the Referer header provide, and why is it important?
+
+- How does the Expect header affect the HTTP request?
+
+- What are the key components of an HTTP response header?
+
+- What are HTTP status codes and how are they categorized (1xx, 2xx, 3xx, 4xx, 5xx)?
+
+- How is the Content-Type header used in an HTTP response?
+
+- What types of encoding might be specified in the HTTP response header?
+
+- What is the significance of the Content-Language and Content-Charset headers in an HTTP response?
+
+- What fields are included in a UDP header, and what is the purpose of each field (Source port, Destination port, Length, Checksum)?
 
 ## Security Mechanisms and Headers
-What is an anti-CSRF token, and how does it work to prevent CSRF attacks?
-What are common cookie flags, such as the HttpOnly flag, and how does it differ from the Secure flag?
-What is the X-XSS-Protection header, and how does it contribute to web security?
-What is Content Security Policy (CSP), and what are its common use cases?
-What is CORS (Cross-Origin Resource Sharing), how can misconfigured CORS be exploited, and what are the roles of headers like "Origin" and "Access-Control-Allow-Origin"?
+- What is an anti-CSRF token, and how does it work to prevent CSRF attacks?
+
+- What are common cookie flags, such as the HttpOnly flag, and how does it differ from the Secure flag?
+
+- What is the X-XSS-Protection header, and how does it contribute to web security?
+
+- What is Content Security Policy (CSP), and what are its common use cases?
+
+- What is CORS (Cross-Origin Resource Sharing), how can misconfigured CORS be exploited, and what are the roles of headers like "Origin" and "Access-Control-Allow-Origin"?

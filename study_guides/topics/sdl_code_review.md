@@ -5,6 +5,8 @@
 
 - Can you briefly discuss the role of information security in each phase of the software development lifecycle?
 
+- What are the Secure Design Principles
+
 - How do you verify if a database is encrypted?
 
 - Where do you store the credentials if you want a script to use credentials from the system?
