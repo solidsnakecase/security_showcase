@@ -1380,47 +1380,81 @@ Whitelisting is preferred because it allows only known, approved entities or act
 
 - What is HSTS (HTTP Strict Transport Security), and how does it improve security for websites?
 
-
+HSTS (HTTP Strict Transport Security) is a web security policy that forces browsers to interact with websites over HTTPS only, preventing protocol downgrade attacks and cookie hijacking.
 
 - What is Certificate Transparency and why is it important for verifying SSL/TLS certificates?
 
-
+Certificate Transparency is a framework for monitoring and auditing SSL/TLS certificates, ensuring they are publicly logged. It helps detect and prevent the issuance of fraudulent or unauthorized certificates, enhancing trust and security.
 
 - What was HTTP Public Key Pinning (HPKP), and why was it deprecated by Google Chrome?
 
-
+HTTP Public Key Pinning (HPKP) was a security feature that allowed websites to specify which public keys should be trusted for their domain. It was deprecated by Google Chrome due to the risk of accidental misconfigurations, which could permanently lock users out of websites, and because alternative mechanisms like Certificate Transparency and HSTS provided similar protection with fewer risks.
 
 - How does local file inclusion differ from remote file inclusion, and why is remote file inclusion less common today?
 
-
+Local File Inclusion (LFI) involves exploiting a vulnerability to include files already present on the server, whereas Remote File Inclusion (RFI) allows attackers to include external files hosted on a different server. RFI is less common today because modern server configurations and programming practices often restrict remote file access by default.
 
 - What are the three primary ways to attack a system: social, physical, and network?
 
+The three primary ways to attack a system are:
 
+Social: Exploiting human behavior, such as phishing or social engineering.
+Physical: Gaining unauthorized physical access to hardware or data, like accessing a computer directly.
+Network: Attacking through network vulnerabilities, such as exploiting unpatched software or intercepting data.
 
 - What are common social engineering attacks (e.g., phishing, spear phishing, baiting, tailgating), and how do cognitive biases play a role?
 
+Common social engineering attacks include:
 
+Phishing: Deceiving individuals into providing sensitive information via fake emails or websites.
+Spear Phishing: Targeted phishing attacks aimed at specific individuals or organizations.
+Baiting: Offering something enticing to lure victims into a trap, like infected USB drives.
+Tailgating: Gaining unauthorized access by following someone into a restricted area.
+Cognitive biases such as trust, urgency, and curiosity make individuals more susceptible to these attacks.
 
 - What physical attacks might be used to compromise a system (e.g., accessing hard drives, booting from Linux, keyloggers)?
 
+Physical attacks that might compromise a system include:
 
+Accessing Hard Drives: Removing and directly accessing data from hard drives.
+Booting from Linux: Using a bootable Linux USB to bypass operating system security and access files.
+Keyloggers: Installing hardware or software to capture keystrokes, recording passwords and other sensitive information.
+Tampering: Physically altering devices or connections to introduce malware or backdoors.
 
 - What network-based attacks can be performed (e.g., using Nmap, finding CVEs, interception attacks)?
 
+Network-based attacks include:
 
+Port Scanning (Nmap): Scanning open ports to find vulnerabilities or services to exploit.
+Exploiting CVEs: Leveraging known vulnerabilities (Common Vulnerabilities and Exposures) to gain unauthorized access.
+Interception Attacks: Using techniques like Man-in-the-Middle (MitM) to intercept and alter communication between systems.
+DDoS Attacks: Overloading a network or service with traffic to disrupt operations.
+ARP Spoofing: Redirecting network traffic by sending falsified ARP messages.
 
 - What are exploit kits and drive-by download attacks, and how do they work?
 
+Exploit Kits are tools used by attackers to automate the exploitation of vulnerabilities on target systems. They typically deliver malware by exploiting known vulnerabilities in software like browsers, plugins, or operating systems.
 
+Drive-By Download Attacks occur when a user visits a compromised or malicious website, which silently delivers malware to their system via an exploit kit. The user doesn’t need to click anything; just visiting the page can trigger the download and execution of malware.
 
 - What are some of the common XML parsers?
 
+Common XML parsers include:
 
+DOM (Document Object Model) Parser: Loads the entire XML document into memory as a tree structure, allowing for easy navigation and manipulation.
+
+SAX (Simple API for XML) Parser: Processes XML documents in a sequential, event-driven manner without loading the entire document into memory, making it more memory-efficient for large XML files.
+
+StAX (Streaming API for XML) Parser: Combines features of both DOM and SAX, allowing for pull-based processing, where the application controls the parsing flow.
+
+XPath Parser: Provides a way to navigate through elements and attributes in an XML document using XPath expressions.
+
+JAXP (Java API for XML Processing): A standard Java API that supports both DOM and SAX parsers for XML processing.
 
 - What is web cache deception?
 
-
+Web Cache Deception is an attack where an attacker tricks a web server's caching mechanism into storing sensitive or malicious content. This is done by crafting URLs or requests that exploit cache configurations, allowing attackers to serve unauthorized content to other users who request the same cached resources.
 
 - What is HTTP request smuggling?
 
+HTTP Request Smuggling is an attack that manipulates the way HTTP requests are processed by web servers and intermediaries. By sending specially crafted requests, attackers exploit inconsistencies in how different servers or proxies parse and handle requests, potentially gaining unauthorized access, bypassing security controls, or injecting malicious payloads.

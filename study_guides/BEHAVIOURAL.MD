@@ -75,6 +75,8 @@ Interviewers are potential friends and they want to help you get the job, they a
 ### Opinions on Security
 How do you make sure developers follow what you taught or made aware? IDE plugin, git actions, SAST tools etc?
 
+Which is your favorite security tool and why?
+
 What is your favorite vulnerability and why?
 
 Talk about any latest/interesting vulnerability or breach you learned about.
